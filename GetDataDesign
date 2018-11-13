@@ -1,0 +1,49 @@
+Pseudo Code
+
+class getData
+  import beautifulSoup
+  import URL
+
+   http request to baseball reference
+   url = https://www.baseball-reference.com/leagues/MLB/
+  
+  start_year = 1960
+  last_year = 2018
+  
+  for current_year = 0 ; current_year < last_year ;  current_year ++
+  
+    current_url = url + (current_year+start_year) + '.shtml'
+    getBattingTable(current_url)
+    GetBattingTableAverages(getBattingTable)
+    replaceValues( battingTable , battingTableAverages)
+    
+    
+    def getBattingTable(current_url)
+        find table
+        make dataframe with table
+        return dataframe
+      
+    def GetBattingTableAverages(getBattingTable)
+      find last row of dataframe 
+      return
+    
+   
+    def replaceValues( battingTable , battingTableAverages)
+    for rows -1 in battingTable // last is average
+      for col in battingTable
+        if value is < value at col in TableAverages
+            put 0 in battingTable
+        else 
+            put 1
+  
+    save_to_CSV (dataframe)
+    open csv
+    write to csv 
+    close csv
+    
+   
+  
+  
+  
+  
+  
