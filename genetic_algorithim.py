@@ -1,7 +1,17 @@
 '''
-chromosome (collection of genes)
-    list of genes
-    set gene value (index, subject)
+sample output
+
+Generation: 1 top fittness score: 651.0
+Generation: 2 top fittness score: 983.0
+Generation: 3 top fittness score: 983.0
+Generation: 4 top fittness score: 983.0
+Generation: 5 top fittness score: 983.0
+Generation: 6 top fittness score: 983.0
+Generation: 7 top fittness score: 983.0
+Generation: 8 top fittness score: 983.0
+Generation: 9 top fittness score: 983.0
+Generation: 10 top fittness score: 994.0
+
 
 '''
 import random
